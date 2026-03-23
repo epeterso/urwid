@@ -245,7 +245,7 @@ class Signals(object):
         handlers[:] = [h for h in handlers if h[0] is not key]
 
     def emit(self, obj, name, *args):
-        """
+        r"""
         :param obj: the object sending a signal
         :type obj: object
         :param name: the signal to send, typically a string
